@@ -1,18 +1,24 @@
-# Basic python client for obtaining access to the SciNote API
+# Introduction into API with automation agents
+
+Hello!
+To make the API more accessible and easier to manage, we are introducing automation agents. 
+Once you create yours under the "Automate with API" menu, a new team will be automatically created,
+titled "[Your name]'s API testing team". This will be a sandbox for you to safely test the API, before you give 
+it access to your data and even to the data of your colleagues (with their or your supervisor's permission, of course). 
+
+You and your newly created automation agent will be the first two users in this sandbox team. 
+For now, your automation agent will only be able to access and alter the data within this team. 
 
 ## Requirements
-- Python 3 with standard lib
-- Computer with the access to the SciNote
-- SciNote username and password
-- SciNote API ID and secret
+- Python 3 with standard libraries. 
+- A computer with access to SciNote@UBT. 
 
 ## Procedure
-- Update the settings.json file
-- Obtain the authorization code url
-- Open the url, sign in, authorize the app
-- Copy the authorization code to settings.yml
+- To get the code examples onto your computer, clone this GitHub repository, for instance, by clicking "Code => Download zip".  
+- If you haven't done so yet, create an API automation agent in SciNote@UBT under the "Automate with API" menu (bottom left corner of the screen).
+- Copy the automation agent credentials into the settings.json file
 - Obtain the access and refresh tokens
-- Run the example
+- Run examples
 
 ### Updating the settings.json
 Open the settings.json file, it should look a bit like this:
@@ -26,35 +32,6 @@ Open the settings.json file, it should look a bit like this:
 }
 ```
 Fill in the missing values.
-If you're unsure what your server url, api_uid or api_secret are, please contact our support team at support@scinote.net
-
-If you are running local installation of SciNote, you can find the information about setting up the access in ```setting_up_api_access_local_instance.md``` file in this folder. 
-
-You can (and should) leave the 'authorization_code' empty for now. 
-
-### Obtaining the authorization code url
-From command prompt run the command
-```
-python3 get_auth_code.py
-```
-The command should output an url. Click (or ctrl + click) on it.\* Your browser should open and lead to to SciNote login page.\**
-After a successful login, you will be prompted to Authorize the application, which you need to confirm.
-After confirmation you will be presented with authorization code. 
-
-Copy that code and paste it into appropriate field in  settings.json. 
-
-```javascript
-{
-  "server_url": "https://your-instance.scinote.net",
-  "api_uid": "xxx",
-  "api_secret": "xxx",
-  "api_redirect_uri": "urn:ietf:wg:oauth:2.0:oob",
-  "authorization_code": "PASTE THE CODE HERE"
-}
-```
-\* you might need to copy the code and paste it into browser
-\** if you are already logged into SciNote you will skip the logging-in step
-
 
 ### Obtain access and refresh tokens
 From the terminal run:
@@ -91,10 +68,6 @@ python3 example_list_projects.py
 
 You should be now able to see the project names listed as an output of the command. 
 
-### Refreshing the access token
-Access token will expire in 2 hours. After that, you will need to get a new token. 
-
-The example how the token is refreshed can be found in example_list_projects.py (lines 15-55)
 
 # WARNING
 
