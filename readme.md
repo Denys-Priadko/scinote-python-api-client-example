@@ -1,6 +1,7 @@
 # Introduction into API with automation agents
 
 Hello!
+
 To make the API more accessible and easier to manage, we are introducing automation agents. 
 Once you create yours under the "Automate with API" menu, a new team will be automatically created,
 titled "[Your name]'s API testing team". This will be a sandbox for you to safely test the API, before you give 
@@ -8,6 +9,8 @@ it access to your data and even to the data of your colleagues (with their or yo
 
 You and your newly created automation agent will be the first two users in this sandbox team. 
 For now, your automation agent will only be able to access and alter the data within this team. 
+
+Have fun!
 
 ## Requirements
 - Python 3 with standard libraries. 
