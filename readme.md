@@ -2,7 +2,7 @@
 
 Hello!
 
-full API reference can be found [here]([https://scinote-eln.github.io/scinote-api-docs/#introduction]) Please note we're using V1 - version 1 for now. 
+full API reference can be found [here](https://scinote-eln.github.io/scinote-api-docs/#introduction) Please note we're using V1 - version 1 for now. 
 
 To make the API more accessible and easier to manage, we are introducing automation agents. 
 Once you create yours under the "Automate with API" menu, a new team will be automatically created,
