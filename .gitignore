@@ -1,3 +1,26 @@
-__pycache__
-*.pyc
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+
+# Credential files - NEVER commit these!
+api_credentials_*.json
+credentials.json
+settings.json
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Backup files
 *.bak
+*.tmp
